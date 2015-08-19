@@ -37,6 +37,26 @@ body {
 
 }
 
+.home:hover {
+	cursor: pointer;
+}
+
+.about-hover:hover {
+	cursor: pointer;
+
+}
+
+.gallery-hover:hover {
+	cursor: pointer;
+
+}
+
+.contact-hover:hover {
+	cursor: pointer;
+
+}
+
+
 .work-section {
 	background-image: url("../images/phone-photo.jpeg");
 	background-size: 100% 100%, cover;

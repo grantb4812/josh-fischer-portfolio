@@ -7,19 +7,19 @@ $(document).ready(function(){
 
 	$('.about').on('click', function(){
 		$('html, body').animate({
-    		scrollTop: $(".about-section").offset().top + 20
+    		scrollTop: $(".about-section").offset().top + 60
 				}, 1000);
 	});	
 
 	$('.gallery').on('click', function(){
 		$('html, body').animate({
-			scrollTop: $('.work-section').offset().top + 20
+			scrollTop: $('.work-section').offset().top + 100
 				}, 1000);
 	});
 
 	$('.contact').on('click', function(){
 		$('html, body').animate({
-			scrollTop: $('.contact-section').offset().top + 20
+			scrollTop: $('.contact-section').offset().top + 60
 				}, 1000);
 	});
 });
