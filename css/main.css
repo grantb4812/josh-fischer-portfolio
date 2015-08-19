@@ -21,7 +21,8 @@ body {
 }
 
 .header-section {
-	background-image: url("../images/pinapple.jpeg");
+	/*background-image: url("../images/pinapple.jpeg");*/
+	
 	background-size: cover;
 	background-position: 0 bottom;
 	background-repeat: no-repeat;
