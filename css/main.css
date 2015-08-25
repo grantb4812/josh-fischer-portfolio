@@ -21,21 +21,38 @@ body {
 }
 
 .header-section {
-	/*background-image: url("../images/pinapple.jpeg");*/
-	
+	background-image: url("../images/pinapple.jpeg");
 	background-size: cover;
 	background-position: 0 bottom;
 	background-repeat: no-repeat;
-	height: 45.938em;
+	height: 56em;
 	overflow: auto;
-	/* width: 100%; */
 }
 
 .about-section {
 	background-image: url("../images/arch-photo.jpeg");
 	background-size: 100% 100%, cover;
-	min-height: 55em;
+	height: 58em;
 
+}
+
+.about-slide-out {
+	height: 28em;
+	display: none;
+	color: black;
+}
+
+.about-section h2 {
+	position: relative;
+	top: 14em;
+	left: 20em;
+	font-size: 3em;
+
+}
+
+.about-slide-up i {
+	font-size: 3em;
+	color: black;
 }
 
 .home:hover {
@@ -57,17 +74,21 @@ body {
 
 }
 
+.about-drop-button:hover {
+	cursor: pointer;
+}
+
 
 .work-section {
 	background-image: url("../images/phone-photo.jpeg");
 	background-size: 100% 100%, cover;
-	min-height: 55em;
+	min-height: 58em;
 }
 
 .contact-section {
 	background-image: url("../images/contact-me.jpg");
 	background-size: 100% 100%, cover;
-	min-height: 55em;
+	min-height: 58em;
 }
 /*
 font-family: 'Roboto Condensed', sans-serif;
@@ -77,27 +98,32 @@ font-family: 'Roboto', sans-serif;
 .nav-bar {
 	display: flex;
 	position: fixed;
+	
 	width: 100%;
+}
+
+.center {
+	max-width: 66em;
+	margin: 0 auto;
 	
 }
 
 .nav-content {
 	width: 65em;
-	margin-left: 16.5em;
 }
 
 .nav-menu {
 	font-size: 2em;
-	margin-left: -4em;
+	float: left;
 	margin-top: 1em;
 	
 }
 
 .nav-social {
 	font-size: 2em;
-	margin-left: 26em;
-	margin-top: -1em;
-
+	float: right;
+	margin-top: 1em;
+	
 }
 
 .nav-social li {
@@ -117,7 +143,7 @@ font-family: 'Roboto', sans-serif;
 
 .name-box {
 	border: 5px solid white;
-	margin-top: 7em;
+	margin-top: 14em;
 }
 
 .center-name {
@@ -138,12 +164,11 @@ font-family: 'Roboto', sans-serif;
 	margin-top: -1.75em;
 }
 
-.fa-chevron-down {
-	position: relative;
+.about-drop-button {
 	font-size: 3em;
-	top: 5em;
-	margin: 0 auto;
-	width: 10em;
+	float: right;
+	margin-top: 12em;
+
 }
 
 .profile-pic {

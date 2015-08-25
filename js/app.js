@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	
+	
+
 	$('.home').on('click', function(){
 		$('html, body').animate({
 			scrollTop: $('.header-section').offset().top
@@ -22,4 +25,17 @@ $(document).ready(function(){
 			scrollTop: $('.contact-section').offset().top + 60
 				}, 1000);
 	});
+
+	$('.about-drop-button').on('click', function(){
+		$('.about-section').animate(
+			{
+				height: '25em'
+			}, 1000);
+		$('.about-slide-out').slideDown('slow');
+
+	});
+
+
+
+
 });
