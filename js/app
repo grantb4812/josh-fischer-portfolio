@@ -1,5 +1,0 @@
-$(document).ready(function(){
-	var windowHeight = $(window).height();
-	$('.container-fluid').css('height', windowHeight);
-
-});
