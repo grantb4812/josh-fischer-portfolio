@@ -9,6 +9,124 @@ html {
   box-sizing: inherit;
 }
 
-html {
-	background-color: green;
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.wrapper {
+	background-image: 
+		linear-gradient(
+			to right,
+            #003F87,
+            #A2B5CD,
+			#007FFF
+			
+		);
+}
+
+.container {
+	margin: 1em auto;
+	background-color:rgba(248, 248, 248, 0.1);
+	border-radius: .5em;
+}
+
+
+.navbar {
+	border-radius: .5em .5em 0 0;
+	width: 100%;
+	border: transparent;
+}
+
+.navbar-default {
+	background-color: rgba(248, 248, 248, 0.48);
+}
+
+.menu {
+	display: flex;
+}
+
+.menu div {
+	width: 10em;
+	margin-top: 2em;
+}
+
+.menu div:hover {
+	cursor: pointer;
+}
+
+
+.service-box {
+	background-color: rgba(248, 248, 248, 0.48);
+	height: 12em;
+	width: 23em;
+}
+
+.works-bar,
+.review-bar {
+	height: 5em;
+	background-color: rgba(248, 248, 248, 0.48);
+}
+
+.review-bar {
+	margin-top: 4em;
+}
+
+.review-row {
+	height: 20em;
+}
+
+.service-section {
+	
+	margin-top: 4em;
+}
+
+.footer-row {
+	height: 13em;
+	background-color: rgba(248, 248, 248, 0.48);
+	border-radius: 0 0 .5em .5em;
+}
+
+.intro-quote {
+	margin-top: 4em;
+}
+
+.service-row {
+	margin-top: 5em;
+}
+
+.latest-works {
+	margin-top: 4em;
+}
+
+.gallery-row {
+	margin-top: 2em;
+}
+
+.review {
+	border: 1px solid rgba(248, 248, 248, 0.48);
+	margin-top: 1em;
+}
+
+hr {
+	border: 1px solid rgba(248, 248, 248, 0.48);
+}
+
+.github {
+	font-size: 7em;
+	margin-top: .2em;
+}
+
+.android i {
+	font-size: 7em;
+	margin: .1em 0 0 1.25em;
+}
+
+.android p {
+	margin-top: .5em;
+}
+
+.ios i {
+	font-size: 7em;
+	margin-top: .2em;
 }
