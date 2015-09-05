@@ -59,13 +59,18 @@ html {
 .service-box {
 	background-color: rgba(248, 248, 248, 0.48);
 	height: 12em;
-	width: 23em;
+	width: 25.5em;
 }
 
 .works-bar,
 .review-bar {
 	height: 5em;
 	background-color: rgba(248, 248, 248, 0.48);
+}
+
+.works-bar,
+.review-bar  {
+	padding-top: 2em;
 }
 
 .review-bar {
@@ -129,4 +134,9 @@ hr {
 .ios i {
 	font-size: 7em;
 	margin-top: .2em;
+}
+
+.grand-wizard {
+	text-align: center;
+	padding-top: 5em;
 }
