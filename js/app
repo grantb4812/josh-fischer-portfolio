@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	gallery(projects);	
+	gallery();	
 
 });
 
@@ -26,13 +26,11 @@ var projects = [
 
 var gallery = function(project) {
 
-	var projectHtml = $('.viewable-gallery').clone();
-
-	$('.gallery-row').append(projectHtml);
+	var projectHtml = $('.gallery-template').clone();
 
 	var img = projectHtml.find('.gallery-template img');
-	img.attr('src', project[0].img)
+	img.attr('src', project.img)
 	
-	$('.gallery-row').append(img);
+
 
 }
