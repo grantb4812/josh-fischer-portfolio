@@ -1,38 +1,16 @@
 $(document).ready(function(){
 
-	
-	appendProject(projects);
+	$('#myCarousel').carousel('pause');
+	//appendProject(projects);
 
-	$('.gallery-row').click(slideLeft);
-	$('.works-bar').click(slideRight);
 
 });
-var width = $(window).width()
 
-var slideRight = function() {
-	width = width * .25;
-	$('.gallery-row div').animate({
-		right: width
-	})
-}
 
-var slideLeft = function() {
-	 	width = width * .25;
-	$('.gallery-row div').animate({
-		left: width 
-	})
-}
+
 
 
 var projects = [
-		{
-			img: "http://placehold.it/300x300",
-			p: "Project Title"
-		},
-		{
-			img: "http://placehold.it/300x300",
-			p: "Project Title"
-		},
 		{
 			img: "http://placehold.it/300x300",
 			p: "Project Title"
@@ -73,7 +51,7 @@ var appendProject = function (assembledProject) {
 
 			var append = createProject(item);
 			$('.gallery-row').append(append);
-		
+			console.log(i)
 		
 	})
 
