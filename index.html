@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </head>
 <body class="wrapper">
@@ -19,8 +20,8 @@
 					<h1>Josh Fischer</h1>
 				</div>
 				<div class="col-xs-offset-8 menu">
-					<div>Home</div>
-					<div>Work</div>
+					<div class="home">Home</div>
+					<div class="work">Work</div>
 					<div>Hire Me</div>
 				</div>
 			</div>
@@ -68,25 +69,18 @@
   <!-- Indicators -->
 
   				<ol class="carousel-indicators">
-    				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
   				</ol>
 
   <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="http://placehold.it/600x300" alt="gallery-image">
-                    <div class="carousel-caption">
-        	   			<p>This is project 1</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="http://placehold.it/600x300" alt="gallery-image">
-                    <div class="carousel-caption">
-                      <p>This is project 2</p>
-                    </div>
-                  </div>
+                  		<div class="item active">
+                    	<img src="http://placehold.it/600x300" alt="gallery-image" class="img-responsive">
+                    		<div class="carousel-caption">
+        	   					<p class="active-project-title">Project Title 1</p>
+                    		</div>
+                  		</div>
+
                 </div>
 
   <!-- Controls -->
@@ -106,12 +100,16 @@
 				<!-- Template for creating works galery -->
 			
 				<div class="gallery-template hidden viewable-template">
-					<div class="item active">
-						<div class="viewable-gallery col-xs-3 ">
-							<img class="img-responsive" src="" alt="responsive-image">
-							<p class="project-title"></p>
-						</div>
-					</div>
+
+					<div class="item">
+                    	<img src="" alt="gallery-image" class="img-responsive">
+                    	<div class="carousel-caption">
+                      		<p class="project-title">This is project 2</p>
+                    	</div>
+                  	</div>
+
+                  	<li class="indicator" data-target="#myCarousel" data-slide-to=""></li>
+					
 				</div>
 
 		<div class="row">
@@ -145,7 +143,6 @@
 	</div>
 
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
 </body>
 </html>
