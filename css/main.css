@@ -59,7 +59,7 @@ html {
 .service-box {
 	background-color: rgba(248, 248, 248, 0.48);
 	height: 12em;
-	width: 25.5em;
+	max-width: 25.5em;
 }
 
 .works-bar,
@@ -125,12 +125,11 @@ hr {
 
 .android i {
 	font-size: 7em;
-	margin: .1em 0 0 1.25em;
+	margin-top: .1em;
+	padding-left: 1em;
 }
 
-.android p {
-	margin-top: .5em;
-}
+
 
 .ios i {
 	font-size: 7em;
@@ -141,8 +140,7 @@ hr {
 	text-align: center;
 	padding-top: 5em;
 }
-/*
-.gallery-template {
+
+.hidden {
 	display: none;
 }
-*/

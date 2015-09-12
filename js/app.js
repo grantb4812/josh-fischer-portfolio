@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	
-	console.log("This is working!");
+	appendProject(projects);
 
 	$('.gallery-row').click(slideLeft);
 	$('.works-bar').click(slideRight);
@@ -21,49 +21,63 @@ var slideLeft = function() {
 	$('.gallery-row div').animate({
 		left: width 
 	})
+}
+
+
+var projects = [
+		{
+			img: "http://placehold.it/300x300",
+			p: "Project Title"
+		},
+		{
+			img: "http://placehold.it/300x300",
+			p: "Project Title"
+		},
+		{
+			img: "http://placehold.it/300x300",
+			p: "Project Title"
+		},
+		{
+			img: "http://placehold.it/300x300",
+			p: "Project Title"
+		},
+		{
+			img: "http://placehold.it/300x300",
+			p: "Project Title"
+		},
+		{
+			img: "http://placehold.it/300x300",
+			p: "Project Title"
+		}
+]
+
+
+
+
+var createProject = function (projectObject) {
+
+	var project = $('.viewable-template .viewable-gallery').clone();
+
+	var pictureElement = project.find('.img-responsive');
+	var paragraphElement = project.find('.project-title');
+
+	pictureElement.attr("src", projectObject.img);
+	paragraphElement.text(projectObject.p);
+	
+	return project;
+}	
+
+var appendProject = function (assembledProject) {
+
+	$.each(assembledProject, function(i, item) {
+
+			var append = createProject(item);
+			$('.gallery-row').append(append);
+		
+		
+	})
 
 	
 }
 
-	//appendGallery(assembleGallery(projects));
 
-
-
-/*
-var projects = [
-	{
-		img: "http://placehold.it/250x250",
-		name: "Cool App Title 1"
-	},
-	{
-		img: "http://placehold.it/250x250",
-		name: "Cool App Title"
-	},
-	{
-		img: "http://placehold.it/250x250",
-		name: "Cool App Title"
-	},
-	{
-		img: "http://placehold.it/250x250",
-		name: "Cool App Title"
-	}
-]
-
-var assembleGallery = function(project) {
-
-	var projectHtml = $('.viewable-gallery').clone();
-
-
-	var imgElement = projectHtml.find('.viewable-gallery img');
-	imgElement.attr('img', projects[0].img)
-
-	var titleElement = projectHtml.find('.viewable-gallery p');
-	titleElement.text(projects[0].name);
-
-	return project;
-}
-
-var appendGallery = function (assembledGallery) {
-
-	$('.gallery-row').append(assembledGallery);
-}*/
