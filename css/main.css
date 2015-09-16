@@ -185,7 +185,7 @@ hr {
 
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
 	.service-box {
 		margin-bottom: 1em;
 		margin: 1em auto;
@@ -196,12 +196,25 @@ hr {
 	}
 
 	.name {
-		margin: 0 auto;
+		margin-left: 32.5%;
 		width: 50%;
 	}
 
 	.menu {
-		margin-left: 1em;
+		width: 60%;
+		margin-left: 37%;
+	}
+}
+
+@media screen and (max-width: 485px) {
+	.name h1 {
+		font-size: 2em;
+	}
+
+	.menu {
+		width: 60%;
+		margin: 0 auto;
+		padding-left: 2em;
 	}
 }
 
