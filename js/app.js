@@ -3,14 +3,6 @@ $(document).ready(function(){
 	
 	appendProject(projects);
 
-	$('.work').on('click', function(){
-		$('.container').animate({
-			scrolltop: $(".latest-works").offset().top
-		}, 1000);		
-	});
-
-	
-
 	$('#myCarousel').carousel();
 
 });
