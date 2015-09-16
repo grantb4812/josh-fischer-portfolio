@@ -214,10 +214,39 @@ hr {
 	.menu {
 		width: 60%;
 		margin: 0 auto;
-		padding-left: 2em;
+		padding-left: 5em;
 	}
 }
 
+@media screen and (max-width:456px) {
+	.name {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
 
+	.home,
+	.work,
+	.hire-me {
+		display: none;
+
+	}
+}
+
+@media screen and (max-width: 390px) {
+
+	.name {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.home,
+	.work,
+	.hire-me {
+		display: none;
+
+	}
+}
 
 
