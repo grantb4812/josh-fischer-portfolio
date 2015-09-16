@@ -44,12 +44,12 @@ html {
 
 .menu {
 	display: flex;
-
+	/* padding-left: 30%; */
 }
 
 .menu div {
-	width: 10em;
-	margin-top: 2em;
+	padding: 2em 2em 2em 0;
+	
 }
 
 .hover:hover {
@@ -180,9 +180,31 @@ hr {
 	}
 
 	.spring p {
-		margin-right: -2em;
+		/* padding-left: 0em; */
 	}
 
 }
+
+@media screen and (max-width: 990px) {
+	.service-box {
+		margin-bottom: 1em;
+		margin: 1em auto;
+	}
+
+	.android i {
+		margin-left: 1.4em;
+	}
+
+	.name {
+		margin: 0 auto;
+		width: 50%;
+	}
+
+	.menu {
+		margin-left: 1em;
+	}
+}
+
+
 
 
